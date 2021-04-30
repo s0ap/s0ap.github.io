@@ -6,7 +6,20 @@
 
 <script async src="//yihui.name/js/center-img.js"></script>
 
-{{ if eq .Kind "page" }}
+{{ if .File }} {{ if .Path }} {{ $Rmd := (print .File.BaseFileName ".Rmd") }} {{
+if (where (readDir (print "content/" .File.Dir)) "Name" $Rmd) }} {{
+$.Scratch.Set "FilePath" (print .File.Dir $Rmd) }} {{ else }} {{ $.Scratch.Set
+"FilePath" .File.Path }} {{ end }}
+
+<p align="right">
+  {{ with .Site.Params.GithubView}}
+  <a href='{{ . }}{{ $.Scratch.Get "FilePath" }}'>View source</a>
+  {{ end }} | {{ with .Site.Params.GithubEdit}}
+  <a href='{{ . }}{{ $.Scratch.Get "FilePath" }}'>Edit source</a>
+  {{ end }}
+</p>
+
+{{ end }} {{ end }} {{ if eq .Kind "page" }}
 <script
   src="https://utteranc.es/client.js"
   repo="s0ap/s0ap.github.io"
