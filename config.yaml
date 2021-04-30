@@ -38,12 +38,28 @@ menu:
 params:
   description: "Personal blog for Vishad"
   footer: "&copy; Vishad Bhalodia 2021 | [LinkedIn](https://www.linkedin.com/in/vishad-bhalodia/) | [Github](https://github.com/s0ap)"
-  highlightjsVersion: "9.12.0"
-  highlightjsCDN: "//cdn.bootcss.com"
-  highlightjsLang: ["r", "yaml", "tex"]
-  highlightjsTheme: "github"
+  customJS:
+    - "js/fix-toc.js"
+    - "js/center-img.js"
+    - "js/right-quote.js"
+    - "js/no-highlight.js"
+    - "js/fix-footnote.js"
+    - "js/math-code.js"
+    - "js/external-link.js"
+    - "js/alt-title.js"
+    # - "js/header-link.js"
   GithubEdit: "https://github.com/s0ap/s0ap.github.io/edit/master/content/"
   GithubView: "https://github.com/s0ap/s0ap.github.io/blob/master/content/"
+
+  # options for highlight.js (version, additional languages, and theme)
+  highlightjsVersion: "9.12.0"
+  highlightjsCDN: "//cdnjs.cloudflare.com/ajax/libs"
+  highlightjsLang: ["r", "yaml", "tex"]
+  highlightjsTheme: "github"
+
+blackfriday:
+  extensionsmask: ["noIntraEmphasis"]
+  fractions: false
 
 markup:
   goldmark:
