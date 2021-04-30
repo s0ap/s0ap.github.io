@@ -43,8 +43,8 @@ $.Scratch.Set "FilePath" .File.Path }} {{ end }}
   with .Site.Params.GithubEdit}}
   <a href='{{ . }}{{ $.Scratch.Get "FilePath" }}'>Edit source</a> {{ end }}
 </p>
-
-{{ end }} {{ end }} {{ if eq .Kind "page" }}
+{{ end }} {{ end }} {{ if eq .Kind "page" }} {{ if not
+.Params.disable_comments}}
 <script
   src="https://utteranc.es/client.js"
   repo="s0ap/s0ap.github.io"
@@ -54,4 +54,4 @@ $.Scratch.Set "FilePath" .File.Path }} {{ end }}
   crossorigin="anonymous"
   async
 ></script>
-{{ end }}
+{{ end }}{{ end }}
