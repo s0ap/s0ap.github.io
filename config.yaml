@@ -15,7 +15,7 @@ ignoreFiles:
   ]
 preserveTaxonomyNames: true
 footnotereturnlinkcontents: ↩
-publishDir: public
+publishDir: docs
 
 menu:
   main:
