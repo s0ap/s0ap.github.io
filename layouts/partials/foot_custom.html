@@ -51,7 +51,11 @@
 {{ end }} {{ end }}
 
 {{/* forcefully adding a horizontal line using html; not sure why it disappears on using utterances */}}
+{{/* 
+{{ if .Params.use_footer_line}}
 <hr>
+{{ end }}
+*/}}
 
 {{ if eq .Kind "page" }} {{ if not .Params.disable_comments}}
 <script
