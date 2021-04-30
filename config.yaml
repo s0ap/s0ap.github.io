@@ -42,6 +42,8 @@ params:
   highlightjsCDN: "//cdn.bootcss.com"
   highlightjsLang: ["r", "yaml", "tex"]
   highlightjsTheme: "github"
+  GithubEdit: "https://github.com/s0ap/s0ap.github.io/edit/master/content/"
+  GithubView: "https://github.com/s0ap/s0ap.github.io/blob/master/content/"
 
 markup:
   goldmark:
