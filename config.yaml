@@ -50,6 +50,7 @@ params:
     # - "js/header-link.js"
   GithubEdit: "https://github.com/s0ap/s0ap.github.io/edit/master/content/"
   GithubView: "https://github.com/s0ap/s0ap.github.io/blob/master/content/"
+  customError: "images/elevator.gif"
 
   # options for highlight.js (version, additional languages, and theme)
   highlightjsVersion: "9.12.0"
