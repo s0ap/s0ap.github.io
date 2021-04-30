@@ -1,12 +1,10 @@
 {{ if .Section }}
 <nav class="post-nav">
     <span class="nav-prev">{{ with .PrevInSection }}&larr;
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</span
-  >
-  <span class="nav-next"
-    >{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    &rarr;{{ end }}</span
-  >
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</span>
+  <span class="nav-next">{{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    &rarr;{{ end }}</span>
 </nav>
 
 <script type="text/javascript">
@@ -51,6 +49,9 @@
   <a href='{{ . }}{{ $.Scratch.Get "FilePath" }}'>Edit source</a> {{ end }}
 </p>
 {{ end }} {{ end }}
+
+{{/* forcefully adding a horizontal line using html; not sure why it disappears on using utterances */}}
+<hr>
 
 {{ if eq .Kind "page" }} {{ if not .Params.disable_comments}}
 <script

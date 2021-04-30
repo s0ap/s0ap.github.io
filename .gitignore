@@ -1,0 +1,16 @@
+# MacOS
+.DS_Store
+
+# VSCode
+.vscode
+.python-version
+node_modules
+
+.eslintcache
+*.swp
+*~
+Thumbs.db
+.project
+.svn
+.nvm-version
+*.log
