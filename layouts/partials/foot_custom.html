@@ -8,34 +8,41 @@
     &rarr;{{ end }}</span
   >
 </nav>
+
 <script type="text/javascript">
-  document.addEventListener('keyup', function(e) {
-    if (e.target.nodeName.toUpperCase() != 'BODY') return;
-    var url = false;
-    if (e.which == 37) {  // Left arrow
-      {{ if .PrevInSection }}
-      url = '{{ .PrevInSection.RelPermalink }}';
-      {{ end }}
-    } else if (e.which == 39) {  // Right arrow
-      {{ if .NextInSection }}
-      url = '{{ .NextInSection.RelPermalink }}';
-      {{ end }}
-    }
-    if (url) window.location = url;
+  document.addEventListener('keyup', function (e) {
+      if (e.target.nodeName.toUpperCase() != 'BODY') return;
+      var url = false;
+      if (e.which == 37) {  // Left arrow
+          {{ if .PrevInSection }}
+          url = '{{ .PrevInSection.RelPermalink }}';
+          {{ end }}
+      } else if (e.which == 39) {  // Right arrow
+          {{ if .NextInSection }}
+          url = '{{ .NextInSection.RelPermalink }}';
+          {{ end }}
+      }
+      if (url) window.location = url;
   });
 </script>
-{{ end }} {{ range .Site.Params.customJS }}
+{{ end }}
+
+{{ range .Site.Params.customJS }}
 <script async src="{{ . | relURL }}"></script>
-{{ end }} {{ if and (not .Params.disable_mathjax) (or (in (string .Content)
-"\\") (in (string .Content) "$")) }}
-<script
-  async
-  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"
-></script>
-{{ end }} {{ if .File }} {{ if .Path }} {{ $Rmd := (print .File.BaseFileName
-".Rmd") }} {{ if (where (readDir (print "content/" .File.Dir)) "Name" $Rmd) }}
-{{ $.Scratch.Set "FilePath" (print .File.Dir $Rmd) }} {{ else }} {{
-$.Scratch.Set "FilePath" .File.Path }} {{ end }}
+{{ end }}
+
+{{ if and (not .Params.disable_mathjax) (or (in (string .Content)"\\") (in (string .Content) "$")) }}
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+{{ end }}
+
+{{ if .File }} {{ if .Path }}
+  {{ $Rmd := (print .File.BaseFileName ".Rmd") }}
+
+{{ if (where (readDir (print "content/" .File.Dir)) "Name" $Rmd) }}
+  {{ $.Scratch.Set "FilePath" (print .File.Dir $Rmd) }}
+{{ else }}
+  {{ $.Scratch.Set "FilePath" .File.Path }}
+{{ end }}
 
 <p align="right">
   {{ with .Site.Params.GithubView}}
@@ -43,8 +50,9 @@ $.Scratch.Set "FilePath" .File.Path }} {{ end }}
   with .Site.Params.GithubEdit}}
   <a href='{{ . }}{{ $.Scratch.Get "FilePath" }}'>Edit source</a> {{ end }}
 </p>
-{{ end }} {{ end }} {{ if eq .Kind "page" }} {{ if not
-.Params.disable_comments}}
+{{ end }} {{ end }}
+
+{{ if eq .Kind "page" }} {{ if not .Params.disable_comments}}
 <script
   src="https://utteranc.es/client.js"
   repo="s0ap/s0ap.github.io"
