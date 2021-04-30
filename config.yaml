@@ -45,7 +45,7 @@ params:
     - "js/no-highlight.js"
     - "js/fix-footnote.js"
     - "js/math-code.js"
-    - "js/external-link.js"
+    # - "js/external-link.js"
     - "js/alt-title.js"
     # - "js/header-link.js"
   GithubEdit: "https://github.com/s0ap/s0ap.github.io/edit/master/content/"
@@ -58,11 +58,35 @@ params:
   highlightjsLang: ["r", "yaml", "tex"]
   highlightjsTheme: "github"
 
-blackfriday:
-  extensionsmask: ["noIntraEmphasis"]
-  fractions: false
-
 markup:
   goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
     renderer:
+      hardWraps: false
       unsafe: true
+      xhtml: false
+    highlight:
+      anchorLineNos: false
+      codeFences: true
+      guessSyntax: false
+      hl_Lines: ""
+      lineAnchors: ""
+      lineNoStart: 1
+      lineNos: false
+      lineNumbersInTable: true
+      noClasses: true
+      style: monokai
+      tabWidth: 4
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
