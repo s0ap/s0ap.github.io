@@ -1,0 +1,49 @@
+baseURL: /
+languageCode: en-us
+title: Vishad Bhalodia
+theme: hugo-ivy
+googleAnalytics: ""
+disqusShortname: ""
+ignoreFiles:
+  [
+    "\\.Rmd$",
+    "_files$",
+    "_cache$",
+    "\\.Rmarkdown$",
+    "\\.knit\\.md$",
+    "\\.utf8\\.md$",
+  ]
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+publishDir: public
+
+menu:
+  main:
+    - name: "Home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      url: "/about/"
+      weight: 4
+    - name: "Course Notes"
+      url: "/notes/"
+      weight: 2
+    - name: "Slides"
+      url: "/slides/"
+      weight: 2.5
+    - name: "Blog Posts"
+      url: "/posts/"
+      weight: 3
+
+params:
+  description: "Personal blog for Vishad"
+  footer: "&copy; Vishad Bhalodia 2021 | [LinkedIn](https://www.linkedin.com/in/vishad-bhalodia/) | [Github](https://github.com/s0ap)"
+  highlightjsVersion: "9.12.0"
+  highlightjsCDN: "//cdn.bootcss.com"
+  highlightjsLang: ["r", "yaml", "tex"]
+  highlightjsTheme: "github"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
