@@ -28,8 +28,8 @@ menu:
     - name: "Course Notes"
       url: "/notes/"
       weight: 2
-    - name: "Slides"
-      url: "/slides/"
+    - name: "Papers"
+      url: "/papers/"
       weight: 2.5
     - name: "Blog Posts"
       url: "/posts/"
