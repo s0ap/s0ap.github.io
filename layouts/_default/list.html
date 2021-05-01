@@ -13,7 +13,7 @@
 {{ end }}
 
 {{ if .Params.simple_list_pages_with_dates}}
-  {{ range .Pages }}
+  {{ range .Sections }}
   <li>
     <span>{{ .Date.Format "2006-01-02" }}</span>
     <a href="{{ .RelPermalink }}">{{ .Title }} {{ with .Params.subtitle }}<span class='subtitle'> &middot; {{ . }} </span>{{ end }}</a>
