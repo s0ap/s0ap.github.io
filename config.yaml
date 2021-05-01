@@ -13,13 +13,13 @@ ignoreFiles:
     "\\.knit\\.md$",
     "\\.utf8\\.md$",
   ]
-#preserveTaxonomyNames: true
+preserveTaxonomyNames: true
 footnotereturnlinkcontents: ↩
 publishDir: docs
 
-#taxonomies:
-#    category: "categories"
-#    tag: "tags"
+taxonomies:
+  category: "categories"
+  tag: "tags"
 
 menu:
   main:
@@ -49,9 +49,8 @@ params:
     - "js/no-highlight.js"
     - "js/fix-footnote.js"
     - "js/math-code.js"
-    # - "js/external-link.js"
+    #- "js/external-link.js"
     - "js/alt-title.js"
-    # - "js/header-link.js"
   GithubEdit: "https://github.com/s0ap/s0ap.github.io/edit/master/content/"
   GithubView: "https://github.com/s0ap/s0ap.github.io/blob/master/content/"
   customError: "images/elevator.gif"
