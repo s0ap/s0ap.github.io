@@ -1,10 +1,29 @@
-{{ partial "header.html" . }} {{ .Content }} {{ if .Section }}
-<ul>
-  {{ range (where .Data.Pages "Section" "!=" "") }}
+
+{{ partial "header.html" . }}
+
+{{ if .Content }}{{ .Content }}{{ end }}
+{{ if not .IsHome }}
+<div class="archive">
+{{ if .Params.simple_list_pages}}
+  {{ range .Pages }}
   <li>
-    <span class="date">{{ .Date.Format "2006/01/02" }}</span>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title }} {{ with .Params.subtitle }}<span class='subtitle'> &middot; {{ . }} </span>{{ end }}</a>
   </li>
   {{ end }}
-</ul>
-{{ end }} {{ partial "footer.html" . }}
+{{ else }}
+<div class="archive">
+  {{ range .Pages.GroupByDate "2006" }}
+  <h2 class="archive-title">{{ .Key }}</h2>
+  {{ range .Pages.GroupByDate "2006-01-02" }}
+  {{ range .Pages }}
+  <li>
+    <span>{{ .Date.Format "2006-01-02" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+{{ end }}
+</div>
+{{ end }}
+{{ partial "footer.html" . }}

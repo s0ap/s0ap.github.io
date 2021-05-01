@@ -1,10 +1,11 @@
-<footer>
-    {{ partial "foot_custom.html" . }} {{ partial "footer_highlightjs" . }} {{ with .Site.Params.footer }}
-    <hr>
-    <div class="copyright">{{ . | markdownify }}</div>
-    {{ end }}
-</footer>
-</article>
-</body>
-
+  <footer>
+  {{ partial "foot_custom.html" . }}
+  {{ partial "footer_highlightjs" . }}
+  {{ with .Site.Params.footer }}
+  <hr>
+  <div class="copyright">{{ . | markdownify }}</div>
+  {{ end }}
+  </footer>
+  </article>
+  </body>
 </html>

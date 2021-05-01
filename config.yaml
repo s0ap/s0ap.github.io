@@ -13,9 +13,13 @@ ignoreFiles:
     "\\.knit\\.md$",
     "\\.utf8\\.md$",
   ]
-preserveTaxonomyNames: true
+#preserveTaxonomyNames: true
 footnotereturnlinkcontents: ↩
 publishDir: docs
+
+#taxonomies:
+#    category: "categories"
+#    tag: "tags"
 
 menu:
   main:
@@ -59,6 +63,7 @@ params:
   highlightjsTheme: "github"
 
 markup:
+  defaultMarkdownHandler: goldmark
   goldmark:
     extensions:
       definitionList: true
@@ -73,20 +78,18 @@ markup:
       unsafe: true
       xhtml: false
     highlight:
-      anchorLineNos: false
       codeFences: true
       guessSyntax: false
-      hl_Lines: ""
-      lineAnchors: ""
-      lineNoStart: 1
-      lineNos: false
+      lineNos: true
+      noClasses: false
       lineNumbersInTable: true
-      noClasses: true
       style: monokai
       tabWidth: 4
     parser:
-      attribute:
-        block: false
-        title: true
+      attribute: true
       autoHeadingID: true
       autoHeadingIDType: github
+    tableOfContents:
+      startLevel: 2
+      endLevel: 6
+      ordered: true

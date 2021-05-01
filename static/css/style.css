@@ -7,9 +7,7 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
@@ -18,11 +16,7 @@ body {
   padding: 0;
 }
 
-button,
-input,
-select,
-textarea,
-label {
+button, input, select, textarea, label {
   margin: 0;
   padding: 0;
   font-family: inherit;
@@ -39,12 +33,7 @@ body {
   line-height: 1.75;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 60px 0 30px;
   line-height: 1.25;
@@ -61,10 +50,7 @@ h2 {
   font-weight: bold;
 }
 
-h3,
-h4,
-h5,
-h6 {
+h3, h4, h5, h6 {
   font-size: 19px;
   font-weight: bold;
   text-align: left;
@@ -78,9 +64,8 @@ blockquote {
 
 /* Code */
 
-pre,
-code {
-  font-size: 0.9em;
+pre, code {
+  font-size: .9em;
 }
 
 pre code {
@@ -102,8 +87,7 @@ pre code {
 
 /* Lists */
 
-ul,
-ol {
+ul, ol {
   padding: 0 0 0 20px;
 }
 
@@ -221,7 +205,7 @@ body {
 }
 
 .masthead .menu li li::before {
-  content: "•\00a\000a0\00a0";
+  content: "•\00a\000a0\00a0"
 }
 
 #menu-check {
@@ -245,14 +229,14 @@ body {
 }
 
 .subtitle {
-  font-size: 0em;
+  font-size: .9em;
   color: #666;
 }
 
 /* Footnotes */
 
 .footnotes {
-  font-size: 0.9em;
+  font-size: .9em;
 }
 
 /* Tables */
@@ -267,14 +251,11 @@ table thead th {
   border-bottom: 1px solid #666;
 }
 
-th,
-td {
+th, td {
   padding: 5px;
 }
 
-thead,
-tfoot,
-tr:nth-child(even) {
+thead, tfoot, tr:nth-child(even) {
   background: #f8f8f8;
 }
 
@@ -314,6 +295,7 @@ tr:nth-child(even) {
 /* Tablet screens and smaller */
 
 @media screen and (max-width: 960px) {
+
   body {
     width: auto;
     max-width: 700px;
@@ -407,8 +389,7 @@ tr:nth-child(even) {
     margin-top: 10px;
   }
 
-  #menu-label:hover,
-  #menu-label:focus {
+  #menu-label:hover, #menu-label:focus {
     border: 1px solid #888;
   }
 
@@ -452,6 +433,7 @@ tr:nth-child(even) {
 /* Portrait phone screens */
 
 @media screen and (max-width: 480px) {
+
   body {
     font-size: 16px;
   }
@@ -464,19 +446,16 @@ tr:nth-child(even) {
     font-size: 18px;
   }
 
-  h3,
-  h4,
-  h5,
-  h6 {
+  h3, h4, h5, h6 {
     font-size: 16px;
   }
 
-  pre,
-  code {
+  pre, code {
     font-size: 12px;
   }
 
   .masthead {
     padding-top: 0;
   }
+
 }
