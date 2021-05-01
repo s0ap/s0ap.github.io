@@ -10,6 +10,15 @@
     <a href="{{ .RelPermalink }}">{{ .Title }} {{ with .Params.subtitle }}<span class='subtitle'> &middot; {{ . }} </span>{{ end }}</a>
   </li>
   {{ end }}
+{{ end }}
+
+{{ if .Params.simple_list_pages_with_dates}}
+  {{ range .Pages }}
+  <li>
+    <span>{{ .Date.Format "2006-01-02" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }} {{ with .Params.subtitle }}<span class='subtitle'> &middot; {{ . }} </span>{{ end }}</a>
+  </li>
+  {{ end }}
 {{ else }}
 <div class="archive">
   {{ range .Pages.GroupByDate "2006" }}

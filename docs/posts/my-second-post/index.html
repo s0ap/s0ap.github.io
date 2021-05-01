@@ -94,7 +94,9 @@
 <nav class="post-nav">
     <span class="nav-prev">&larr;
     <a href="/posts/my-first-post/">My First Post</a></span>
-  <span class="nav-next"></span>
+  <span class="nav-next">
+    <a href="/posts/complicated-post/">Complicated post</a>
+    &rarr;</span>
 </nav>
 
 <script type="text/javascript">
@@ -106,6 +108,8 @@
           url = '\/posts\/my-first-post\/';
           
       } else if (e.which == 39) {  
+          
+          url = '\/posts\/complicated-post\/';
           
       }
       if (url) window.location = url;
