@@ -14,6 +14,7 @@ ignoreFiles:
     "\\.utf8\\.md$",
   ]
 preserveTaxonomyNames: true
+enableEmoji: true
 footnotereturnlinkcontents: ↩
 publishDir: docs
 
