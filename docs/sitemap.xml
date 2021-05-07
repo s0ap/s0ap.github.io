@@ -2,16 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://s0ap.github.io/posts/complicated-post/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://s0ap.github.io/posts/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://s0ap.github.io/posts/complicated-post/part2/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://s0ap.github.io/about/</loc>
     <lastmod>2021-04-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://s0ap.github.io/</loc>
@@ -20,11 +11,10 @@
     <loc>https://s0ap.github.io/posts/my-second-post/</loc>
     <lastmod>2021-04-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://s0ap.github.io/posts/complicated-post/part1/</loc>
-    <lastmod>2021-04-30T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://s0ap.github.io/posts/my-first-post/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://s0ap.github.io/about/</loc>
   </url><url>
     <loc>https://s0ap.github.io/categories/</loc>
   </url><url>
