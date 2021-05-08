@@ -32,7 +32,9 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    
+    <link rel="stylesheet" href="/css/custom.css" />
+
+
 
 
 
@@ -59,13 +61,48 @@
 
 <nav class="breadcrumbs">
     
-        <a href="https://s0ap.github.io/">home / </a>
+        <a href="https://s0ap.github.io/">home > </a>
     
-        <a href="https://s0ap.github.io/posts/">posts / </a>
+        <a href="https://s0ap.github.io/posts/">posts > </a>
     
-        <a href="https://s0ap.github.io/posts/my-second-post/">my-second-post / </a>
+        <a href="https://s0ap.github.io/posts/my-second-post/">my-second-post > </a>
     
 </nav>
+
+
+  
+<style>
+.progress-bar {
+    background: linear-gradient(to right, red var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 1;
+}
+</style>
+
+
+<div class="progress-bar"></div>
+
+
+<script>
+var element = document.documentElement,
+  body = document.body,
+  scrollTop = 'scrollTop',
+  scrollHeight = 'scrollHeight',
+  progress = document.querySelector('.progress-bar'),
+  scroll;
+
+document.addEventListener('scroll', function() {
+  scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100;
+  progress.style.setProperty('--scroll', scroll + '%');
+});
+</script>
+
+
 
   </head>
 
@@ -92,9 +129,11 @@
   
   <li><a href="/papers/">Papers</a></li>
   
+  <li><a href="/about/">About</a></li>
+  
   <li><a href="/posts/">Blog Posts</a></li>
   
-  <li><a href="/about/">About</a></li>
+  <li><a href="/tags/">Tags</a></li>
   
   
   </ul>
@@ -111,8 +150,12 @@
 
 
 
+
+
 <h3>Vishad Bhalodia
    / 2021-04-30</h3>
+
+
 
 
 <span class="readtime">Estimated read time: 1 minutes</span>
@@ -168,6 +211,8 @@
 
 <script async src="/js/alt-title.js"></script>
 
+
+<script src="/js/progress.min.js"></script>
 
 
 

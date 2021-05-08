@@ -22,7 +22,7 @@
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://s0ap.github.io/posts/my-first-post/</guid>
-      <description>Test</description>
+      <description>class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if not strs: return &amp;#34;&amp;#34; if len(strs) == 1: return strs[0] strs.sort() p = &amp;#34;&amp;#34; for x, y in zip(strs[0], strs[-1]): if x == y: p += x else: break return p Placeholder text.</description>
     </item>
     
     <item>

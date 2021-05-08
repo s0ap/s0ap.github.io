@@ -1,11 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Part 2 - Vishad Bhalodia</title>
-    <meta property="og:title" content="Part 2 - Vishad Bhalodia">
+    <title>init - Vishad Bhalodia</title>
+    <meta property="og:title" content="init - Vishad Bhalodia">
     
     <meta name="twitter:card" content="summary">
 
@@ -15,11 +16,6 @@
 
     
       
-      <meta property="description" content="This is part 2.
-">
-      <meta property="og:description" content="This is part 2.
-">
-      
     
 
     
@@ -27,16 +23,89 @@
 
     
 
+    
+    <link href="/tags/init/index.xml" rel="alternate" type="application/rss+xml" title="Vishad Bhalodia" />
     
     
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="breadcrumbs">
     
+        <a href="https://s0ap.github.io/">home > </a>
+    
+        <a href="https://s0ap.github.io/tags/">tags > </a>
+    
+        <a href="https://s0ap.github.io/tags/init/">init > </a>
+    
+</nav>
+
+
+  
+<style>
+.progress-bar {
+    background: linear-gradient(to right, red var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 1;
+}
+</style>
+
+
+<div class="progress-bar"></div>
+
+
+<script>
+var element = document.documentElement,
+  body = document.body,
+  scrollTop = 'scrollTop',
+  scrollHeight = 'scrollHeight',
+  progress = document.querySelector('.progress-bar'),
+  scroll;
+
+document.addEventListener('scroll', function() {
+  scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100;
+  progress.style.setProperty('--scroll', scroll + '%');
+});
+</script>
+
+
+
   </head>
 
   
-  <body class="posts">
+  <body class="tags">
     <header class="masthead">
       <h1><a href="/">Vishad Bhalodia</a></h1>
 
@@ -58,9 +127,11 @@
   
   <li><a href="/papers/">Papers</a></li>
   
+  <li><a href="/about/">About</a></li>
+  
   <li><a href="/posts/">Blog Posts</a></li>
   
-  <li><a href="/about/">About</a></li>
+  <li><a href="/tags/">Tags</a></li>
   
   
   </ul>
@@ -71,29 +142,51 @@
     <article class="main">
       <header class="title">
       
-<h1>Part 2</h1>
+<h1>init</h1>
 
 
 
 
 
-<h3>
-  2021-05-01</h3>
+
+
+
+
+
+
+
 <hr>
+
 
 
       </header>
 
 
 
-<p>This is part 2.</p>
 
+<div class="archive">
+
+
+
+<div class="archive">
+  
+  <h2 class="archive-title">2021</h2>
+  
+  
+  <li>
+    <span>2021-04-29</span>
+    <a href="/posts/my-first-post/">My First Post</a>
+  </li>
+  
+  
+  
+
+</div>
 
   <footer>
   
 <nav class="post-nav">
-    <span class="nav-prev">&larr;
-    <a href="/posts/complicated-post/part1/">Part 1</a></span>
+    <span class="nav-prev"></span>
   <span class="nav-next"></span>
 </nav>
 
@@ -102,8 +195,6 @@
       if (e.target.nodeName.toUpperCase() != 'BODY') return;
       var url = false;
       if (e.which == 37) {  
-          
-          url = '\/posts\/complicated-post\/part1\/';
           
       } else if (e.which == 39) {  
           
@@ -129,35 +220,15 @@
 <script async src="/js/alt-title.js"></script>
 
 
-
-
- 
-  
-
-
-  
-
-
-<p align="right">
-  
-  <a href='https://github.com/s0ap/s0ap.github.io/blob/master/content/posts/complicated-post/part2.md'>View source</a>  | 
-  <a href='https://github.com/s0ap/s0ap.github.io/edit/master/content/posts/complicated-post/part2.md'>Edit source</a> 
-</p>
- 
+<script src="/js/progress.min.js"></script>
 
 
 
 
- 
-<script
-  src="https://utteranc.es/client.js"
-  repo="s0ap/s0ap.github.io"
-  issue-term="title"
-  label="comment"
-  theme="github-light"
-  crossorigin="anonymous"
-  async
-></script>
+
+
+
+
 
 
   

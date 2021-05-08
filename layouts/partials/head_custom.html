@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}" />
+
 {{ $siteUrl := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
 {{ $.Scratch.Add "sitePath" .Site.BaseURL }}
 
@@ -13,6 +15,10 @@
 
 <nav class="breadcrumbs">
     {{ range $.Scratch.Get "siteBreadcrumbs" }}
-        <a href="{{ .url }}">{{ .name }} / </a>
+        <a href="{{ .url }}">{{ .name }} > </a>
     {{ end }}
 </nav>
+
+{{ if not .Params.disable_scroll_indicator }}
+  {{ partial "readprogress_indicator.html" . }}
+{{ end }}

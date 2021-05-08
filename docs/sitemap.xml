@@ -11,7 +11,16 @@
     <loc>https://s0ap.github.io/posts/my-second-post/</loc>
     <lastmod>2021-04-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://s0ap.github.io/tags/firstpost/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://s0ap.github.io/tags/init/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://s0ap.github.io/posts/my-first-post/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://s0ap.github.io/tags/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://s0ap.github.io/about/</loc>
@@ -21,7 +30,5 @@
     <loc>https://s0ap.github.io/notes/</loc>
   </url><url>
     <loc>https://s0ap.github.io/papers/</loc>
-  </url><url>
-    <loc>https://s0ap.github.io/tags/</loc>
   </url>
 </urlset>

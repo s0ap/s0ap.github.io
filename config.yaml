@@ -29,7 +29,7 @@ menu:
       weight: 1
     - name: "About"
       url: "/about/"
-      weight: 4
+      weight: 3
     - name: "Course Notes"
       url: "/notes/"
       weight: 2
@@ -39,6 +39,9 @@ menu:
     - name: "Blog Posts"
       url: "/posts/"
       weight: 3
+    - name: "Tags"
+      url: "/tags/"
+      weight: 4
 
 params:
   description: "Personal blog for Vishad"
@@ -50,17 +53,18 @@ params:
     - "js/no-highlight.js"
     - "js/fix-footnote.js"
     - "js/math-code.js"
-    #- "js/external-link.js"
+    # - "js/header-link.js"
+    # - "js/external-link.js"
     - "js/alt-title.js"
   GithubEdit: "https://github.com/s0ap/s0ap.github.io/edit/master/content/"
   GithubView: "https://github.com/s0ap/s0ap.github.io/blob/master/content/"
   customError: "images/elevator.gif"
 
   # options for highlight.js (version, additional languages, and theme)
-  highlightjsVersion: "9.12.0"
+  highlightjsVersion: "10.7.2"
   highlightjsCDN: "//cdnjs.cloudflare.com/ajax/libs"
-  highlightjsLang: ["r", "yaml", "tex"]
-  highlightjsTheme: "github"
+  highlightjsLang: ["r", "yaml", "tex", "python"]
+  highlightjsTheme: "monokai sublime"
 
 markup:
   defaultMarkdownHandler: goldmark

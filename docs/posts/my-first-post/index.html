@@ -15,10 +15,8 @@
 
     
       
-      <meta property="description" content="Test
-">
-      <meta property="og:description" content="Test
-">
+      <meta property="description" content="class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if not strs: return &amp;#34;&amp;#34; if len(strs) == 1: return strs[0] strs.sort() p = &amp;#34;&amp;#34; for x, y in zip(strs[0], &amp;hellip;">
+      <meta property="og:description" content="class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if not strs: return &amp;#34;&amp;#34; if len(strs) == 1: return strs[0] strs.sort() p = &amp;#34;&amp;#34; for x, y in zip(strs[0], &amp;hellip;">
       
     
 
@@ -30,9 +28,16 @@
     
     
 
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/monokai%20sublime.min.css' rel='stylesheet' type='text/css' />
+
+
+
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    
+    <link rel="stylesheet" href="/css/custom.css" />
+
+
 
 
 
@@ -59,13 +64,48 @@
 
 <nav class="breadcrumbs">
     
-        <a href="https://s0ap.github.io/">home / </a>
+        <a href="https://s0ap.github.io/">home > </a>
     
-        <a href="https://s0ap.github.io/posts/">posts / </a>
+        <a href="https://s0ap.github.io/posts/">posts > </a>
     
-        <a href="https://s0ap.github.io/posts/my-first-post/">my-first-post / </a>
+        <a href="https://s0ap.github.io/posts/my-first-post/">my-first-post > </a>
     
 </nav>
+
+
+  
+<style>
+.progress-bar {
+    background: linear-gradient(to right, red var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 1;
+}
+</style>
+
+
+<div class="progress-bar"></div>
+
+
+<script>
+var element = document.documentElement,
+  body = document.body,
+  scrollTop = 'scrollTop',
+  scrollHeight = 'scrollHeight',
+  progress = document.querySelector('.progress-bar'),
+  scroll;
+
+document.addEventListener('scroll', function() {
+  scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100;
+  progress.style.setProperty('--scroll', scroll + '%');
+});
+</script>
+
+
 
   </head>
 
@@ -92,9 +132,11 @@
   
   <li><a href="/papers/">Papers</a></li>
   
+  <li><a href="/about/">About</a></li>
+  
   <li><a href="/posts/">Blog Posts</a></li>
   
-  <li><a href="/about/">About</a></li>
+  <li><a href="/tags/">Tags</a></li>
   
   
   </ul>
@@ -107,12 +149,24 @@
       
 <h1>My First Post</h1>
 
+<h1><span class="subtitle">python · statistics · life · random thoughts</span></h1>
 
-<h1><span style="color: #666; font-size: .9em;">python · statistics · life · random thoughts</span></h1>
+
+
 
 
 <h3>Vishad Bhalodia
    / 2021-04-29</h3>
+
+
+<ul class="tags">Tags:
+
+  <li><a href="/tags/firstpost">firstpost</a></li>
+
+  <li><a href="/tags/init">init</a></li>
+
+</ul>
+
 
 
 <span class="readtime">Estimated read time: 1 minutes</span>
@@ -126,7 +180,22 @@
 
 
 
-<p>Test</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">longestCommonPrefix</span>(self, strs: List[str]) <span style="color:#f92672">-&gt;</span> str:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> strs:
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span>
+        <span style="color:#66d9ef">if</span> len(strs) <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>:
+            <span style="color:#66d9ef">return</span> strs[<span style="color:#ae81ff">0</span>]
+
+        strs<span style="color:#f92672">.</span>sort()
+        p <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+        <span style="color:#66d9ef">for</span> x, y <span style="color:#f92672">in</span> zip(strs[<span style="color:#ae81ff">0</span>], strs[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]):
+            <span style="color:#66d9ef">if</span> x <span style="color:#f92672">==</span> y:
+                p <span style="color:#f92672">+=</span> x
+            <span style="color:#66d9ef">else</span>:
+                <span style="color:#66d9ef">break</span>
+        <span style="color:#66d9ef">return</span> p
+</code></pre></div><p>Placeholder text.</p>
 
 
   <footer>
@@ -170,6 +239,8 @@
 <script async src="/js/alt-title.js"></script>
 
 
+<script src="/js/progress.min.js"></script>
+
 
 
  
@@ -202,6 +273,20 @@
 
 
   
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/yaml.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/tex.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/python.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
   
   <hr>

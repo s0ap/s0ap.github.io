@@ -3,6 +3,7 @@ title: About the site
 author: Vishad Bhalodia
 disable_comments: true
 disable_readtime: true
+disable_scroll_indicator: true
 ---
 
 Hey! My name is Vishad. I am an incoming MFE (Financial Engineering) student at the Cornell University. I worked at MSCI from June 2017 &ndash; April 2021 as a senior quantitative index researcher developing smart beta indexes for institutional investors. Before that, I was an undergraduate student at BITS Pilani, India where I majored in Economics (MSc.) and Mechanical Engineering (BE.).

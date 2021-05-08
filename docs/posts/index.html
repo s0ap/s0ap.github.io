@@ -35,7 +35,9 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    
+    <link rel="stylesheet" href="/css/custom.css" />
+
+
 
 
 
@@ -55,11 +57,46 @@
 
 <nav class="breadcrumbs">
     
-        <a href="https://s0ap.github.io/">home / </a>
+        <a href="https://s0ap.github.io/">home > </a>
     
-        <a href="https://s0ap.github.io/posts/">posts / </a>
+        <a href="https://s0ap.github.io/posts/">posts > </a>
     
 </nav>
+
+
+  
+<style>
+.progress-bar {
+    background: linear-gradient(to right, red var(--scroll), transparent 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    z-index: 1;
+}
+</style>
+
+
+<div class="progress-bar"></div>
+
+
+<script>
+var element = document.documentElement,
+  body = document.body,
+  scrollTop = 'scrollTop',
+  scrollHeight = 'scrollHeight',
+  progress = document.querySelector('.progress-bar'),
+  scroll;
+
+document.addEventListener('scroll', function() {
+  scroll = (element[scrollTop]||body[scrollTop]) / ((element[scrollHeight]||body[scrollHeight]) - element.clientHeight) * 100;
+  progress.style.setProperty('--scroll', scroll + '%');
+});
+</script>
+
+
 
   </head>
 
@@ -86,9 +123,11 @@
   
   <li><a href="/papers/">Papers</a></li>
   
+  <li><a href="/about/">About</a></li>
+  
   <li class="active"><a href="/posts/">Blog Posts</a></li>
   
-  <li><a href="/about/">About</a></li>
+  <li><a href="/tags/">Tags</a></li>
   
   
   </ul>
@@ -100,6 +139,10 @@
       <header class="title">
       
 <h1>Blog Posts</h1>
+
+
+
+
 
 
 
@@ -180,6 +223,8 @@
 
 <script async src="/js/alt-title.js"></script>
 
+
+<script src="/js/progress.min.js"></script>
 
 
 

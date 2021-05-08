@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-{{ if .Params.show_toc }} {{ .TableOfContents }} {{ end }}
+{{ if .Params.show_toc }}<h3>Table of Contents:</h3>{{ .TableOfContents }} {{ end }}
 {{ .Content }}
 
 {{ partial "footer.html" . }}
