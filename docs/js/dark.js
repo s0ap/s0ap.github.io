@@ -39,10 +39,10 @@ function setTheme(mode) {
   if (mode === "dark") {
     darkTheme.disabled = false;
     toggle.className = "far fa-sun";
-    toggle.title = "Enable Light Mode";
+    //toggle.title = "Enable Light Mode";
   } else if (mode === "light") {
     darkTheme.disabled = true;
     toggle.className = "far fa-moon";
-    toggle.title = "Enable Dark Mode";
+    //toggle.title = "Enable Dark Mode";
   }
 }
