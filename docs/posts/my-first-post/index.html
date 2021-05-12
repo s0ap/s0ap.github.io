@@ -7,36 +7,43 @@
     <title>My First Post - python · statistics · life · random thoughts  - Vishad Bhalodia</title>
     <meta property="og:title" content="My First Post - Vishad Bhalodia">
     
+
+    
+    <link href='https://s0ap.github.io/favicon.png' rel='icon' type='image/x-icon'/>
+    
+
     <meta name="twitter:card" content="summary">
-
     
       
     
 
     
       
-      <meta property="description" content="class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if not strs: return &amp;#34;&amp;#34; if len(strs) == 1: return strs[0] strs.sort() p = &amp;#34;&amp;#34; for x, y in zip(strs[0], &amp;hellip;">
-      <meta property="og:description" content="class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if not strs: return &amp;#34;&amp;#34; if len(strs) == 1: return strs[0] strs.sort() p = &amp;#34;&amp;#34; for x, y in zip(strs[0], &amp;hellip;">
+      <meta property="description" content="Try adding some code to the post -
+[&amp;hellip;] class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if not strs: return &amp;#34;&amp;#34; if len(strs) == 1: return strs[0] strs.sort() p = &amp;hellip;">
+      <meta property="og:description" content="Try adding some code to the post -
+[&amp;hellip;] class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if not strs: return &amp;#34;&amp;#34; if len(strs) == 1: return strs[0] strs.sort() p = &amp;hellip;">
       
     
 
     
-    
 
     
 
     
     
+    
 
-
-<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/monokai%20sublime.min.css' rel='stylesheet' type='text/css' />
 
 
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/custom.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="/css/custom.css" />
+<link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
 
+<a id="dark-mode-toggle" class="fas fa-moon" style="float: right; margin: 5px; border-bottom: none; display: inline;"></a>
 
 
 
@@ -180,6 +187,7 @@ document.addEventListener('scroll', function() {
 
 
 
+<p>Try adding some code to the post -</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">longestCommonPrefix</span>(self, strs: List[str]) <span style="color:#f92672">-&gt;</span> str:
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> strs:
@@ -195,7 +203,22 @@ document.addEventListener('scroll', function() {
             <span style="color:#66d9ef">else</span>:
                 <span style="color:#66d9ef">break</span>
         <span style="color:#66d9ef">return</span> p
-</code></pre></div><p>Placeholder text.</p>
+</code></pre></div><p>Let&rsquo;s try some math. As the source is a Markdown and not an RMarkdown file, one has to use special syntax to enable math rendering. Specifically, one can use</p>
+<ol>
+<li><code>\\( &lt;LaTeX&gt; \\)</code> and <code>\\[ &lt;LaTeX&gt; \\]</code>,</li>
+<li><code>`$&lt;LaTeX&gt;$`</code> and <code>`$$&lt;LaTeX&gt;$$`</code>,</li>
+</ol>
+<p>for inline and display mode, respectively. In the former, one can use <code>\newline</code> or <code>\\\\\</code> instead of <code>\\</code> to break lines.</p>
+<p>Let \(x = 1\) and</p>
+<p>\[
+\begin{align}
+z^2 &amp;= x^2 + y^2 \\<br>
+x &amp;= 3 \newline
+y &amp;= 4.
+\end{align}
+\]</p>
+<p>Alternatively, let <code>$x = 1$</code> and</p>
+<p><code>$$ \begin{align} z^2 &amp;= x^2 + y^2 \\ x &amp;= 3 \\ y &amp;= 4. \end{align} $$</code></p>
 
 
   <footer>
@@ -236,9 +259,41 @@ document.addEventListener('scroll', function() {
 
 <script async src="/js/math-code.js"></script>
 
+<script async src="/js/external-link.js"></script>
+
+<script async src="/js/copycode.js"></script>
+
 <script async src="/js/alt-title.js"></script>
 
+<script async src="/js/dark.js"></script>
 
+
+
+<script src="/js/math-code.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+           extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    }
+    });
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for(i = 0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+
+    MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+    });
+</script>
 
 
  
@@ -258,6 +313,9 @@ document.addEventListener('scroll', function() {
 
 
 
+<script src="https://kit.fontawesome.com/72f03cd715.js" crossorigin="anonymous"></script>
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
  
 <script
   src="https://utteranc.es/client.js"
@@ -270,20 +328,25 @@ document.addEventListener('scroll', function() {
 ></script>
 
 
+
   
 
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.8.0/dist/highlightjs-line-numbers.min.js"></script>
 
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/r.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/yaml.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/tex.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/latex.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/python.min.js"></script>
-<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/bash.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/json.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.highlightAll();</script>
 
+<script>hljs.initLineNumbersOnLoad();</script>
 
 
   

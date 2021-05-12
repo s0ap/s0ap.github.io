@@ -11,8 +11,12 @@
     <title>{{ .Title }}{{ with .Params.subtitle }} - {{ . }} {{ end }} - {{ .Site.Title }}</title>
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
     {{ end }}
-    <meta name="twitter:card" content="summary">
 
+    {{ with .Site.Params.favicon }}
+    <link href='{{ . | absURL }}' rel='icon' type='image/x-icon'/>
+    {{ end }}
+
+    <meta name="twitter:card" content="summary">
     {{ with .Description }}
       {{ $.Scratch.Set "summary" (markdownify .) }}
     {{ else }}
@@ -32,11 +36,6 @@
     {{ $.Scratch.Set "autoImage" true }}
     <meta name="twitter:image" content="{{ replaceRE "<img src=\"" "" . | htmlUnescape }}">
     {{ end }}
-    {{ with .Site.Params.twitterImage }}
-    {{ if not ($.Scratch.Get "autoImage") }}
-    <meta name="twitter:image" content="{{ absURL . }}">
-    {{ end }}
-    {{ end }}
 
     {{ if .Keywords }}
     <meta property="keywords" content ="{{ delimit .Keywords ", " }}">
@@ -45,6 +44,7 @@
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
     {{ end }}
+    
     {{ partial "head_highlightjs" . }}
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />

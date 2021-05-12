@@ -71,7 +71,9 @@ pre, code {
 pre code {
   display: block;
   border: 1px solid #ddd;
-  box-shadow: 5px 5px 5px #eee;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+  box-shadow: none;
   padding: 1em;
   overflow-x: auto;
   line-height: 1.75;
@@ -255,7 +257,7 @@ th, td {
 }
 
 thead, tfoot, tr:nth-child(even) {
-  background: #f8f8f8;
+  background: none;
 }
 
 /**
