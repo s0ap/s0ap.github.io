@@ -1,8 +1,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}" />
-<link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
 
+<link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
 <a id="dark-mode-toggle" class="fas fa-moon" style="float: right; margin: 5px; border-bottom: none; display: inline;"></a>
+
+<a id="top"></a>
+
 {{ $siteUrl := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
 {{ $.Scratch.Add "sitePath" .Site.BaseURL }}
 

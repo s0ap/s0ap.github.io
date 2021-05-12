@@ -67,6 +67,7 @@
 {{ end }}
 
 <p align="right">
+  <a href="#top">Back to top</a> | 
   {{ with .Site.Params.GithubView}}
   <a href='{{ . }}{{ $.Scratch.Get "FilePath" }}'>View source</a> {{ end }} | {{
   with .Site.Params.GithubEdit}}
@@ -82,6 +83,16 @@
 */}}
 
 <script src="https://kit.fontawesome.com/72f03cd715.js" crossorigin="anonymous"></script>
+
+<!-- Disabled - Interferes with dark mode style; investigate -->
+<!--
+<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+<script>addBackToTop({
+  diameter: 40,
+  backgroundColor: '#ddd',
+  textColor: 'red'
+})</script>
+-->
 
 {{ if eq .Kind "page" }} {{ if not .Params.disable_comments}}
 <script

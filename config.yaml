@@ -45,7 +45,7 @@ menu:
 
 params:
   description: "Personal blog for Vishad"
-  footer: "&copy; Vishad Bhalodia 2021 | [LinkedIn](https://www.linkedin.com/in/vishad-bhalodia/) | [Github](https://github.com/s0ap)"
+  footer: "&copy; 2021 Vishad Bhalodia | [LinkedIn](https://www.linkedin.com/in/vishad-bhalodia/) | [Github](https://github.com/s0ap)"
   customJS:
     - "js/fix-toc.js"
     - "js/center-img.js"
