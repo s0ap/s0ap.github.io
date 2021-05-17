@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
+    {{ with .Site.Params.lazyload }}
+    <script src='{{ . | absURL }}' async=""></script>
+    {{ end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ if eq .RelPermalink "/" }}
@@ -12,8 +15,10 @@
     <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
     {{ end }}
 
+    {{ if .Site.Params.favicon }}
     {{ with .Site.Params.favicon }}
     <link href='{{ . | absURL }}' rel='icon' type='image/x-icon'/>
+    {{ end }}
     {{ end }}
 
     <meta name="twitter:card" content="summary">
@@ -44,7 +49,7 @@
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
     {{ end }}
-    
+
     {{ partial "head_highlightjs" . }}
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />

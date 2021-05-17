@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    
+    <script src='https://s0ap.github.io/js/lazysizes.min.js' async=""></script>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -9,7 +12,9 @@
     
 
     
+    
     <link href='https://s0ap.github.io/favicon.png' rel='icon' type='image/x-icon'/>
+    
     
 
     <meta name="twitter:card" content="summary">
@@ -31,7 +36,7 @@
     
 
     
-    
+
     
 
 
@@ -39,10 +44,10 @@
 
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/custom.css" />
-
-<link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
+    <link disabled id="dark-mode-theme" rel="stylesheet" href="/css/dark.css">
 <a id="dark-mode-toggle" class="fas fa-moon" style="float: right; margin: 5px; border-bottom: none; display: inline;"></a>
+
+<link rel="stylesheet" href="/css/custom.css" />
 
 <a id="top"></a>
 
@@ -251,6 +256,8 @@ y &amp;= 4.
 
 
 
+<script async src="/js/dark.js"></script>
+
 <script async src="/js/fix-toc.js"></script>
 
 <script async src="/js/center-img.js"></script>
@@ -269,35 +276,11 @@ y &amp;= 4.
 
 <script async src="/js/alt-title.js"></script>
 
-<script async src="/js/dark.js"></script>
-
 
 
 <script src="/js/math-code.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      displayMath: [['$$','$$']],
-      processEscapes: true,
-      processEnvironments: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      TeX: { equationNumbers: { autoNumber: "AMS" },
-           extensions: ["AMSmath.js", "AMSsymbols.js"] }
-    }
-    });
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for(i = 0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-    });
-
-    MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } }
-    });
-</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" class="lazyload"></script>
 
 
  
@@ -308,7 +291,7 @@ y &amp;= 4.
 
 
 <p align="right">
-  <a href="#top">Back to top</a> | 
+  <a href="#top">Back to top</a> |
   
   <a href='https://github.com/s0ap/s0ap.github.io/blob/master/content/posts/my-first-post.md'>View source</a>  | 
   <a href='https://github.com/s0ap/s0ap.github.io/edit/master/content/posts/my-first-post.md'>Edit source</a> 
@@ -318,10 +301,7 @@ y &amp;= 4.
 
 
 
-<script src="https://kit.fontawesome.com/72f03cd715.js" crossorigin="anonymous"></script>
-
-
-
+<script src="https://kit.fontawesome.com/72f03cd715.js" crossorigin="anonymous" class="lazyload"></script>
 
  
 <script
@@ -331,9 +311,9 @@ y &amp;= 4.
   label="comment"
   theme="github-light"
   crossorigin="anonymous"
+  class="lazyload"
   async
 ></script>
-
 
 
   
@@ -345,12 +325,7 @@ y &amp;= 4.
 
 
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/r.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/yaml.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/latex.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/python.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/bash.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/json.min.js"></script>
 <script>hljs.configure({languages: []}); hljs.highlightAll();</script>
 
 <script>hljs.initLineNumbersOnLoad();</script>

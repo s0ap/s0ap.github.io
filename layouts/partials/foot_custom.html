@@ -32,29 +32,7 @@
 {{ if and (not .Params.disable_mathjax) (or (in (string .Content) "\\") (in (string .Content) "$")) }}
 <script src="{{ "/js/math-code.js" | relURL }}"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      displayMath: [['$$','$$']],
-      processEscapes: true,
-      processEnvironments: true,
-      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-      TeX: { equationNumbers: { autoNumber: "AMS" },
-           extensions: ["AMSmath.js", "AMSsymbols.js"] }
-    }
-    });
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for(i = 0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-    });
-
-    MathJax.Hub.Config({
-    TeX: { equationNumbers: { autoNumber: "AMS" } }
-    });
-</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" class="lazyload"></script>
 {{ end }}
 
 {{ if .File }} {{ if .Path }}
@@ -67,7 +45,7 @@
 {{ end }}
 
 <p align="right">
-  <a href="#top">Back to top</a> | 
+  <a href="#top">Back to top</a> |
   {{ with .Site.Params.GithubView}}
   <a href='{{ . }}{{ $.Scratch.Get "FilePath" }}'>View source</a> {{ end }} | {{
   with .Site.Params.GithubEdit}}
@@ -82,17 +60,7 @@
 {{ end }}
 */}}
 
-<script src="https://kit.fontawesome.com/72f03cd715.js" crossorigin="anonymous"></script>
-
-<!-- Disabled - Interferes with dark mode style; investigate -->
-<!--
-<script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-<script>addBackToTop({
-  diameter: 40,
-  backgroundColor: '#ddd',
-  textColor: 'red'
-})</script>
--->
+<script src="https://kit.fontawesome.com/72f03cd715.js" crossorigin="anonymous" class="lazyload"></script>
 
 {{ if eq .Kind "page" }} {{ if not .Params.disable_comments}}
 <script
@@ -102,7 +70,7 @@
   label="comment"
   theme="github-light"
   crossorigin="anonymous"
+  class="lazyload"
   async
 ></script>
-
 {{ end }}{{ end }}
