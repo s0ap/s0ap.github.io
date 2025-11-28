@@ -21,11 +21,11 @@ p, li, span, div {
 
 /* Links */
 a {
-    color: #6db3f2 !important;
+    color: #b0b0b0 !important;
 }
 
 a:hover {
-    color: #9fcfff !important;
+    color: #e8e8e8 !important;
 }
 
 /* Make sure regular text in articles isn't affected by link colors */
