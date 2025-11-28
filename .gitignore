@@ -13,4 +13,4 @@ Thumbs.db
 .project
 .svn
 .nvm-version
-*.log
+*.log.hugo_build.lock
