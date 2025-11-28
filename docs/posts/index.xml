@@ -4,27 +4,23 @@
     <title>Blog Posts on Vishad Bhalodia</title>
     <link>https://s0ap.github.io/posts/</link>
     <description>Recent content in Blog Posts on Vishad Bhalodia</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://s0ap.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 30 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://s0ap.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Second Post</title>
       <link>https://s0ap.github.io/posts/my-second-post/</link>
       <pubDate>Fri, 30 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://s0ap.github.io/posts/my-second-post/</guid>
-      <description>Test</description>
+      <description>&lt;p&gt;Test&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>My First Post</title>
       <link>https://s0ap.github.io/posts/my-first-post/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://s0ap.github.io/posts/my-first-post/</guid>
-      <description>Try adding some code to the post -
-class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if not strs: return &amp;#34;&amp;#34; if len(strs) == 1: return strs[0] strs.sort() p = &amp;#34;&amp;#34; for x, y in zip(strs[0], strs[-1]): if x == y: p += x else: break return p Let&amp;rsquo;s try some math. As the source is a Markdown and not an RMarkdown file, one has to use special syntax to enable math rendering.</description>
+      <description>&lt;p&gt;Try adding some code to the post -&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Solution&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;longestCommonPrefix&lt;/span&gt;(self, strs: List[str]) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; str:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;not&lt;/span&gt; strs:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; len(strs) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; strs[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        strs&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sort()&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        p &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; x, y &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; zip(strs[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;], strs[&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]):&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; y:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                p &lt;span style=&#34;color:#f92672&#34;&gt;+=&lt;/span&gt; x&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;break&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; p&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Let&amp;rsquo;s try some math. As the source is a Markdown and not an RMarkdown file, one has to use special syntax to enable math rendering. Specifically, one can use&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;\\( &amp;lt;LaTeX&amp;gt; \\)&lt;/code&gt; and &lt;code&gt;\\[ &amp;lt;LaTeX&amp;gt; \\]&lt;/code&gt;,&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;`$&amp;lt;LaTeX&amp;gt;$`&lt;/code&gt; and &lt;code&gt;`$$&amp;lt;LaTeX&amp;gt;$$`&lt;/code&gt;,&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;for inline and display mode, respectively. In the former, one can use &lt;code&gt;\newline&lt;/code&gt; or &lt;code&gt;\\\\\&lt;/code&gt; instead of &lt;code&gt;\\&lt;/code&gt; to break lines.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

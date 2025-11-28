@@ -4,7 +4,8 @@
     <title>Notes on Vishad Bhalodia</title>
     <link>https://s0ap.github.io/notes/</link>
     <description>Recent content in Notes on Vishad Bhalodia</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://s0ap.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://s0ap.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

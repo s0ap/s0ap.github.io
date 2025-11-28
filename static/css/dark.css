@@ -1,37 +1,159 @@
+/* Dark Mode Styles for Hugo Ivy Theme */
+
 html {
-    background-color: #171717 !important;
+    background-color: #1a1a1a !important;
 }
 
 body {
-    filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
-    -webkit-filter: invert(100%) hue-rotate(180deg) brightness(105%) contrast(85%);
+    background-color: #1a1a1a !important;
+    color: #e8e8e8 !important;
 }
 
-img,
-video,
-body * [style*="background-image"] {
-    filter: hue-rotate(180deg) contrast(100%) invert(100%);
-    -webkit-filter: hue-rotate(180deg) contrast(100%) invert(100%);
+/* Paragraphs and general text */
+p, li, span, div {
+    color: #e8e8e8 !important;
 }
 
-/**
- * GitHub Gist Theme
- * Author : Anthony Attard - https://github.com/AnthonyAttard
- * Author : Louis Barranqueiro - https://github.com/LouisBarranqueiro
- */
+/* Main content area */
+.main {
+    background-color: #1a1a1a !important;
+}
 
+/* Links */
+a {
+    color: #6db3f2 !important;
+}
+
+a:hover {
+    color: #9fcfff !important;
+}
+
+/* Make sure regular text in articles isn't affected by link colors */
+.article p, .article li, .content p, .content li {
+    color: #e8e8e8 !important;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+}
+
+/* Menu/Navigation */
+.menu, .menu a {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+.menu a:hover {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+/* Breadcrumbs */
+.breadcrumbs a {
+    color: #9ca3af !important;
+}
+
+.breadcrumbs a:hover {
+    color: #e0e0e0 !important;
+}
+
+/* Article list items */
+.article-meta {
+    color: #9ca3af !important;
+}
+
+/* Blockquotes */
+blockquote {
+    background-color: #252525 !important;
+    border-left-color: #4a4a4a !important;
+    color: #d0d0d0 !important;
+}
+
+/* Code blocks */
+pre {
+    background-color: #252525 !important;
+    border: 1px solid #3a3a3a !important;
+}
+
+code {
+    background-color: #252525 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Inline code */
+p code, li code {
+    background-color: #2a2a2a !important;
+    color: #f0f0f0 !important;
+    padding: 2px 6px !important;
+    border-radius: 3px !important;
+}
+
+/* Tables */
+table {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0 !important;
+}
+
+th {
+    background-color: #252525 !important;
+    color: #ffffff !important;
+    border: 1px solid #3a3a3a !important;
+}
+
+td {
+    border: 1px solid #3a3a3a !important;
+}
+
+tr:hover {
+    background-color: #222222 !important;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a !important;
+    color: #9ca3af !important;
+    border-top: 1px solid #3a3a3a !important;
+}
+
+footer a {
+    color: #9ca3af !important;
+}
+
+/* Subtitle and metadata */
+.subtitle, .readtime {
+    color: #9ca3af !important;
+}
+
+/* Tags */
+ul.tags li a {
+    color: #6db3f2 !important;
+}
+
+/* Horizontal rules */
+hr {
+    border-color: #3a3a3a !important;
+}
+
+/* Progress bar - bright yellow for dark mode visibility */
+.progress-bar {
+    background: linear-gradient(to right, #fbbf24 var(--scroll), transparent 0) !important;
+    z-index: 9999 !important;
+    opacity: 1 !important;
+}
+
+/* Code syntax highlighting - Dark GitHub Gist Theme */
 .hljs {
-  -webkit-box-shadow: none;
-	-moz-box-shadow: none;
-  display: block;
-  background: white;
-  color: #333333;
-  overflow: auto;
+    display: block;
+    background: #0d1117 !important;
+    color: #c9d1d9 !important;
+    overflow: auto;
+    padding: 0.5em !important;
 }
 
 .hljs-comment,
 .hljs-meta {
-  color: #969896;
+    color: #8b949e !important;
 }
 
 .hljs-variable,
@@ -39,29 +161,29 @@ body * [style*="background-image"] {
 .hljs-strong,
 .hljs-emphasis,
 .hljs-quote {
-  color: #df5000;
+    color: #ff7b72 !important;
 }
 
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-type {
-  color: #d73a49;
+    color: #ff7b72 !important;
 }
 
 .hljs-literal,
 .hljs-symbol,
 .hljs-bullet,
 .hljs-attribute {
-  color: #0086b3;
+    color: #79c0ff !important;
 }
 
 .hljs-section,
 .hljs-name {
-  color: #63a35c;
+    color: #7ee787 !important;
 }
 
 .hljs-tag {
-  color: #333333;
+    color: #7ee787 !important;
 }
 
 .hljs-title,
@@ -70,27 +192,68 @@ body * [style*="background-image"] {
 .hljs-selector-class,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-  color: #6f42c1;
+    color: #d2a8ff !important;
 }
 
 .hljs-addition {
-  color: #55a532;
-  background-color: #eaffea;
+    color: #7ee787 !important;
+    background-color: rgba(46, 160, 67, 0.15) !important;
 }
 
 .hljs-deletion {
-  color: #bd2c00;
-  background-color: #ffecec;
+    color: #ff7b72 !important;
+    background-color: rgba(248, 81, 73, 0.15) !important;
 }
 
 .hljs-link {
-  text-decoration: underline;
+    text-decoration: underline !important;
+    color: #79c0ff !important;
 }
 
 .hljs-number {
-  color: #005cc5;
+    color: #79c0ff !important;
 }
 
 .hljs-string {
-  color: #032f62;
+    color: #a5d6ff !important;
+}
+
+/* Copy button in code blocks */
+.highlight-copy-btn {
+    background-color: #3a3a3a !important;
+    color: #e0e0e0 !important;
+}
+
+.highlight-copy-btn:hover {
+    background-color: #4a4a4a !important;
+}
+
+/* Search and input fields if present */
+input, textarea, select {
+    background-color: #252525 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #3a3a3a !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #6db3f2 !important;
+    outline: none !important;
+}
+
+/* Make sure images don't get too bright */
+img {
+    opacity: 0.9;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+/* Utterances comment box - dark theme */
+.utterances {
+    max-width: 100% !important;
+}
+
+.utterances-frame {
+    color-scheme: dark !important;
 }
