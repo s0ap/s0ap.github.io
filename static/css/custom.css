@@ -58,21 +58,3 @@ table {
     -ms-user-select: none;
     user-select: none;
 }
-
-/* NEW: Make masthead (sidebar) narrower */
-.masthead {
-  width: 200px !important;
-  padding: 20px 30px 20px 10px !important;
-}
-
-/* NEW: Adjust main content to use more space */
-.main {
-  width: 760px !important;
-  margin-left: 200px !important;
-  padding: 32px 10px 20px 30px !important;
-}
-
-/* NEW: Adjust body width to accommodate narrower sidebar */
-body {
-  width: 960px !important;
-}

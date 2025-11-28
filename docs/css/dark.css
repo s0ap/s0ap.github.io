@@ -19,13 +19,31 @@ p, li, span, div {
     background-color: #1a1a1a !important;
 }
 
-/* Links */
+/* Links - neutral gray instead of blue */
 a {
     color: #b0b0b0 !important;
 }
 
 a:hover {
     color: #e8e8e8 !important;
+}
+
+/* Masthead title - remove blue from site title */
+.masthead h1 a {
+    color: #e8e8e8 !important;
+}
+
+.masthead h1 a:hover {
+    color: #ffffff !important;
+}
+
+/* Dark mode toggle button - remove blue */
+#dark-mode-toggle {
+    color: #e8e8e8 !important;
+}
+
+#dark-mode-toggle:hover {
+    color: #ffffff !important;
 }
 
 /* Make sure regular text in articles isn't affected by link colors */
@@ -247,13 +265,4 @@ img {
 
 img:hover {
     opacity: 1;
-}
-
-/* Utterances comment box - dark theme */
-.utterances {
-    max-width: 100% !important;
-}
-
-.utterances-frame {
-    color-scheme: dark !important;
 }
